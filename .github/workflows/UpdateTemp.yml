@@ -5,16 +5,8 @@ on:
     - cron: '*/5 * * * *' 
 
 jobs:
-  update_readme:
+  before_job:
     runs-on: ubuntu-latest
-    permissions:
-        contents: write
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Get data from temp.ozwk.net
-      run: |
-        curl -s http://temp.ozwk.net > temp_data.txt
-        echo $("test")
-        echo $(cat temp_data.txt)
+      - id: test0
+        run: echo "result=HELLO" >> "${TEST}"

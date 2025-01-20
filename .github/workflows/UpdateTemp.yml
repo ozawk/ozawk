@@ -7,7 +7,7 @@ jobs:
   before_job:
     runs-on: ubuntu-latest
     steps:
-      - id: test0
+      - uses: actions/checkout@v3
+      - name: Echo README contents
         run: |
-          readme_content=$(cat README.md)
-          echo "$readme_content"
+          cat README.md

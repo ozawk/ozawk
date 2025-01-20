@@ -8,4 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: test0
-        run: echo "HELLO"
+        run: |
+          readme_content=$(cat README.md)
+          echo "$readme_content"

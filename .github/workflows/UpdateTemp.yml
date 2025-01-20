@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: test1
+      - name: test2
         run: |
-          sed -i 's/<!--START-->.*<!--END-->/<!--START-->TEST<!--END-->/g' README.md
+          sed -i 's/START.*END/STARTTESTEND/g' README.md
       - name: Commit changes
         run: |
           git config user.name "temp bot"

@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: test0
-        run: echo "result=HELLO" >> "${TEST}"
+        run: echo "HELLO"

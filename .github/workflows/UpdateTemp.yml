@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: test7
+      - name: test8
         run: |
           TEST=$(curl -s https://temp.ozwk.net)
-          sed -i 's/<!--START-->.*<!--END-->/<!--START-->aaa<!--END-->/g' README.md
+          sed -i 'y/<!--START-->.*<!--END-->/<!--START-->aaa<!--END-->/g' README.md
       - name: Commit changes
         run: |
           git config user.name "temp bot"

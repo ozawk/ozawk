@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: test2
+      - name: test3
         run: |
           sed -i 's/START.*END/uaaaaaaaa/g' README.md
       - name: Commit changes

@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Add content to README
+      - name: test
         run: |
           sed -i 's/START/START1234/g' README.md
       - name: Commit changes

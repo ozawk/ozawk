@@ -1,0 +1,15 @@
+name: UpdateTemp
+
+on:
+  schedule:
+    - cron: '* * * * *' 
+
+jobs:
+  update_readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get content from temp.ozwk.net
+        id: get_content
+        run: |
+          curl -s https://temp.ozwk.net > temp.txt

@@ -8,6 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Echo README contents
+      - name: Add content to README
         run: |
-          cat README.md
+          echo "AAAAA" >> README.md
+      - name: Commit changes
+        run: |
+          git config user.name "temp bot"
+          git config user.email "tempbot@ozwk.net"
+          git add README.md
+          git commit -m "Add AAAAA to README"
+          git push

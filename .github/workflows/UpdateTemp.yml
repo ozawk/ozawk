@@ -16,16 +16,5 @@ jobs:
     - name: Get data from temp.ozwk.net
       run: |
         curl -s http://temp.ozwk.net > temp_data.txt
-
-    - name: Update README.md
-      run: |
-        TEMP_DATA=$(cat temp_data.txt)
-        sed -i '/<!--START-->/, /<!--END-->/c\<!--START-->\n'"$TEMP_DATA"'\n<!--END-->' README.md
-
-    - name: Commit changes
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add README.md
-        git commit -m 'Update README with temp.ozwk.net data'
-        git push
+        echo $("test")
+        echo $(cat temp_data.txt)

@@ -17,5 +17,5 @@ jobs:
           git config user.name "temp bot"
           git config user.email "tempbot@ozwk.net"
           git add README.md
-          git commit -m "Add AAAAA to README"
+          git commit -m "AutoUpdateTemp"
           git push

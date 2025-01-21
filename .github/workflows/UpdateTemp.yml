@@ -11,7 +11,7 @@ jobs:
       - name: test8
         run: |
           TEST=$(curl -s https://temp.ozwk.net)
-          sed -i 'y/<!--START-->.*<!--END-->/aaa/g' README.md
+          sed -i 's/<!--START-->.*<!--END-->/aaa/g' README.md
       - name: Commit changes
         run: |
           git config user.name "temp bot"

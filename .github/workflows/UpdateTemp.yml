@@ -9,11 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: First step
+        id: get
+        run: |
+          echo "ECHO!!!!"
       - name: test30
         env:
           TEMP: 'TEMP'
         run: |
-          sed -i "s/<!--START-->.*<!--END-->/ ${TEMP} /g" README.md
+          sed -i "s/<!--START-->.*<!--END-->/ ${{ steps.get }} /g" README.md
       - name: Commit changes
         run: |
           git config user.name "temp bot"

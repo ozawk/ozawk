@@ -4,17 +4,17 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '*/5 * * * *' 
-env:
-  TEXT: "TEST"
 jobs:
   before_job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: test30
+        env:
+          TEMP: 'TEMP'
         run: |
           HOGE="HOGEHOGE"
-          sed -i 's/<!--START-->.*<!--END-->/ ${{ HOGE }} /g' README.md
+          sed -i 's/<!--START-->.*<!--END-->/ ${TEMP} /g' README.md
       - name: Commit changes
         run: |
           git config user.name "temp bot"

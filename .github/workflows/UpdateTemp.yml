@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: test9
+      - name: test10
         run: |
           TEST=$(curl -s https://temp.ozwk.net)
           sed -i 's/<!--START-->.*<!--END-->/<!--START-->${TEST}<!--END-->/g' README.md

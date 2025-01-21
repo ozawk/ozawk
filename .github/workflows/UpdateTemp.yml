@@ -10,8 +10,8 @@ jobs:
       - uses: actions/checkout@v3
       - name: test10
         run: |
-          TEST=$(curl -s https://temp.ozwk.net)
-          sed -i 's/<!--START-->.*<!--END-->/<!--START-->${TEST}<!--END-->/g' README.md
+          T=$(curl -s https://temp.ozwk.net)
+          sed -i s/<!--START-->.*<!--END-->/<!--START-->${T}<!--END-->/g README.md
       - name: Commit changes
         run: |
           git config user.name "temp bot"

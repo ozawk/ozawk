@@ -11,6 +11,7 @@ jobs:
       - name: test22
         run: |
           TEST=$(curl -s https://temp.ozwk.net)
+          echo 'START${{TEST}}END'
           sed -i 's/<!--START-->.*<!--END-->/<!--START-->$TEST<!--END-->/g' README.md
       - name: Commit changes
         run: |

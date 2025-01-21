@@ -3,15 +3,16 @@ name: UpdateTemp
 on:
   schedule:
     - cron: '*/5 * * * *' 
+env:
+  TEMPTEXT: "TEMPTEST"
 jobs:
   before_job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: test22
+      - name: test23
         run: |
-          TEST=$(curl -s https://temp.ozwk.net)
-          echo 'START${{TEST}}END'
+          sed -i 's/<!--START-->.*<!--END-->/<!--START-->${{ env.TEMPTEST }}<!--END-->/g' README.md
       - name: Commit changes
         run: |
           git config user.name "temp bot"

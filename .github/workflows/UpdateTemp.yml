@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: test24
+      - name: test25
         run: |
           sed -i 's/<!--START-->.*<!--END-->/<!--START-->$TEMPTEST<!--END-->/g' README.md
       - name: Commit changes

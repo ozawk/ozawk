@@ -1,5 +1,5 @@
 # Hi🙌
-### ***I'm <sup>Student</sup>Engineeer!***<br><br>  Server🌃 Networking🌌 Robotics🛸 Coding🪄 Electronic🎇<br><br>
+### ***I'm <sup>Student</sup>Engineeer!***<br><br>  Server🌃 Networking🌌 Robotics🛸 Coding🪄 Electronics🎇<br><br>
 ### 🌏 [**ozwk.net**](https://ozwk.net) 👈👈<br>
 ### 🛰️ [**ozawa@ozwk.net**](ozawa@ozwk.net)<br><br>
 ###                  <!--START-->"05時31分現在の部屋の温度はtemperature℃です"<!--END-->                 <br><br><br><br>

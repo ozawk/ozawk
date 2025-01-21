@@ -13,8 +13,7 @@ jobs:
         env:
           TEMP: 'TEMP'
         run: |
-          HOGE="HOGEHOGE"
-          sed -i 's/<!--START-->.*<!--END-->/ ${TEMP} /g' README.md
+          sed -i "s/<!--START-->.*<!--END-->/ ${TEMP} /g" README.md
       - name: Commit changes
         run: |
           git config user.name "temp bot"

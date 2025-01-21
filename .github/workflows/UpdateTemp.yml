@@ -10,10 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: test29
+      - name: test30
         run: |
-          TEST="s/<!--START-->.*<!--END-->/KAKAKA/g"
-          sed -i /TEST README.md
+          sed -i 's/<!--START-->.*<!--END-->/${{ env.TEXT }}/g' README.md
       - name: Commit changes
         run: |
           git config user.name "temp bot"

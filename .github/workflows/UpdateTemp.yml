@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '*/5 * * * *' 
 env:
-  TEMPTEXT: "TEMPTEST"
+  TEMPTEXT: "TEST"
 jobs:
   before_job:
     runs-on: ubuntu-latest
@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: test25
         run: |
-          sed -i 's/<!--START-->.*<!--END-->/<!--START-->$TEMPTEST<!--END-->/g' README.md
+          echo "VVVVVV $env_var"
       - name: Commit changes
         run: |
           git config user.name "temp bot"

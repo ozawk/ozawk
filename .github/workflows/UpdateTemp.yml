@@ -9,15 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: First step
-        id: get
+      - name: UpdateTemp
         run: |
-          echo "ECHO!!!!"
-      - name: test30
-        env:
-          TEMP: 'TEMP'
-        run: |
-          sed -i "s/<!--START-->.*<!--END-->/ $(curl -s https://temp.ozwk.net) /g" README.md
+          sed -i "s/<!--START-->.*<!--END-->/ <!--START-->$(curl -s https://temp.ozwk.net)<!--END--> /g" README.md
       - name: Commit changes
         run: |
           git config user.name "temp bot"

@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: test25
+      - name: test26
         run: |
           echo "VVVVVV $env_var"
       - name: Commit changes

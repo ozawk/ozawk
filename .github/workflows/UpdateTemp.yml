@@ -4,15 +4,15 @@ on:
   schedule:
     - cron: '*/5 * * * *' 
 env:
-  TEMPTEXT: "TEST"
+  TEXT: "TEST"
 jobs:
   before_job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: test26
+      - name: test27
         run: |
-          echo "VVVVVV $TEMPTEXT"
+          sed -i 's/<!--START-->.*<!--END-->/ $TEXT /g' README.md
       - name: Commit changes
         run: |
           git config user.name "temp bot"

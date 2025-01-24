@@ -2,7 +2,7 @@
 ### ***I'm <sup>Student</sup>Engineeer!***<br><br>  Server🌃 Networking🌌 Robotics🛸 Coding🪄 Electronics🎇<br><br>
 ### 🌏 [**ozwk.net**](https://ozwk.net) 👈👈<br>
 ### 🛰️ [**ozawa@ozwk.net**](ozawa@ozwk.net)<br><br>
-###                                                                                                                                      <!--START-->03時59分現在の部屋の温度は272℃です<!--END-->                                                                                                                                     <br><br><br><br>
+###                                                                                                                                       <!--START-->03時59分現在の部屋の温度は272℃です<!--END-->                                                                                                                                      <br><br><br><br>
 ### ❤:
 [![My Skills](https://skillicons.dev/icons?i=cloudflare,workers,nodejs,ts,cpp,arduino,autocad)](https://skillicons.dev)<br>
 ### もっと知りたい:

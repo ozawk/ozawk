@@ -2,8 +2,8 @@ name: UpdateTemp
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '*/20 * * * *' 
+  #schedule:
+  #  - cron: '*/20 * * * *' 
 jobs:
   before_job:
     runs-on: ubuntu-latest
